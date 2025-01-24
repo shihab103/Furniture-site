@@ -126,6 +126,7 @@ nav{
 }
 .category > div:first-child{
     background: rgb(82, 122, 154);
+    color: #fff;
 }
 .category h3{
     font-size: 20px;
