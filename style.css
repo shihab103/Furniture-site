@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Kufam", serif;
+}
+/* sheared section */
+.mx-width{
+    max-width: 1440px;
+}
+.btn-primary{
+    padding: 10px 25px;
+    background: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+/* hero section */
+.hero{
+    height: 696px;
+    background-image: url('assets/Rectangle\ 2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+.list ul{
+    display: flex;
+    gap: 56px;
+}
+.list ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.account{
+    display: flex;
+    gap: 13px;
+}
+.account>div{
+    color: #fff;
+    display: flex;
+    gap: 5px;
+}
+.account h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 126px;
+}
+.txt h1{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 62px;
+    margin-bottom: 18px;
+    color: #fff;
+    padding: 0 308px;
+    text-align: center;
+}
+.responsive-nav{
+    display: none;
+}
+
+/* responsive section */
+
+@media screen and (max-width:576px){
+    nav:not(.responsive-nav){
+        display: none;
+    }
+    .responsive-nav{
+        display: inline;
+        display: flex;
+        justify-content: space-between;
+    }
+    .txt h1{
+        padding: 0 20px;
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+}
+
+/* category section */
+.category-section{
+    background: rgb(247, 251, 255);
+    margin:0 auto;
+}
+.category-section>h1{
+    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.category{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 25px;
+    padding: 0 50px;
+    padding-bottom: 40px;
+}
+.category>div{
+    height: 162px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 0px rgba(9, 43, 66, 0.25);
+    background: rgb(247, 251, 255);
+}
+.category>div:hover{
+    background: rgb(82, 122, 154);
+    color: #fff;
+}
+.category > div:first-child{
+    background: rgb(82, 122, 154);
+}
+.category h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.category p{
+    font-size: 16px;
+    font-weight: 400;
+}
+/* responsive section */
+@media screen and (max-width:576px){
+    .category{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
