@@ -1,0 +1,29 @@
+.footer{
+    height: 237px;
+    margin: 0 auto;
+    background: rgba(82, 122, 154, 0.41);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 50px;
+    gap: 80px;
+    align-items: center;
+}
+.footer li{
+    color: rgb(49, 47, 47);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 5px;
+}
+.footer h2{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+}
+@media screen and (max-width:576px) {
+    .footer{
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+}
