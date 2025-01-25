@@ -1,0 +1,51 @@
+.discount{
+    height: 340px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: rgb(247, 251, 255);
+    padding: 0 38px;
+    padding-bottom: 40px;
+}
+.first{
+    background-image:url('assets/Rectangle\ 3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 80px;
+    padding-top: 60px;
+}
+.second{
+    background-image:url('assets/Rectangle\ 3\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 80px;
+    padding-top: 60px;
+}
+.first h1,.second h1{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    padding: 10px 0;
+}
+.first h3,.second h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+.first h1,.first h3{
+    color: rgb(9, 43, 66);
+}
+.second h1,.second h3{
+    color: #fff;
+}
+
+/* responsive section */
+@media screen and (max-width:576px){
+    .discount{
+        grid-template-columns: 1fr;
+        gap:15px;
+        padding: 40px 20px;
+    }
+    .first,.second{
+        padding: 30px;
+    }
+}

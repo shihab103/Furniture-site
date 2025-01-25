@@ -10,13 +10,23 @@ body{
 .mx-width{
     max-width: 1440px;
 }
-.btn-primary{
-    padding: 10px 25px;
+.btn-secondary{
+    padding: 7px 25px;
     background: #fff;
     border-radius: 5px;
     border: none;
     font-size: 24px;
     font-weight: 500;
+    cursor: pointer;
+}
+.btn-primary{
+    border-radius: 2px;
+    color: #fff;
+    background: rgb(82, 122, 154);
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    padding: 8px 25px;
     cursor: pointer;
 }
 /* hero section */
